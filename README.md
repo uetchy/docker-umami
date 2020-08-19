@@ -10,7 +10,6 @@ Dockerized version of [umami](https://github.com/mikecao/umami).
 git clone https://github.com/uetchy/docker-umami && cd docker-umami
 git submodule init
 git submodule update
-docker-compose build
 cp .env.placeholder .env
 # edit .env
 ```
@@ -44,5 +43,5 @@ With [docker-compose-letsencrypt-nginx-proxy-companion](https://github.com/evert
 After setting up LNPC, configure `LETSENCRYPT_HOST`, `LETSENCRYPT_EMAIL`, and `VIRTUAL_HOST` in `.env` and run the following script.
 
 ```bash
-docker-compose up -c docker-compose.lnpc.yml
+docker-compose -f docker-compose.lnpc.yml up
 ```
