@@ -43,5 +43,5 @@ With [docker-compose-letsencrypt-nginx-proxy-companion](https://github.com/evert
 After setting up LNPC, configure `LETSENCRYPT_HOST`, `LETSENCRYPT_EMAIL`, and `VIRTUAL_HOST` in `.env` and run the following script.
 
 ```bash
-docker-compose -f docker-compose.lnpc.yml up
+docker-compose -f docker-compose.lnpc.yml up -d
 ```
