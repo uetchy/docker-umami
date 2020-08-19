@@ -1,0 +1,3 @@
+[submodule "https:/github.com/mikecao/umami.git"]
+	path = https:/github.com/mikecao/umami.git
+	url = ./umami
