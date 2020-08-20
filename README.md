@@ -1,5 +1,8 @@
 # docker-umami
 
+![Docker: pulls (scoped)](https://badgen.net/docker/pulls/uetchy/umami)
+![Docker: pulls (scoped)](https://badgen.net/docker/size/uetchy/umami)
+
 Dockerized version of [umami](https://github.com/mikecao/umami).
 
 ## Use
