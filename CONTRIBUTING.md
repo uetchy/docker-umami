@@ -4,11 +4,9 @@
 
 ```bash
 git clone https://github.com/uetchy/docker-umami.git && cd docker-umami
-git submodule init
-git submodule update
 cp .env.placeholder .env
 # edit .env
-docker-compose up --build
+docker-compose up
 ```
 
 ## Release Guide (Maintainers only)
