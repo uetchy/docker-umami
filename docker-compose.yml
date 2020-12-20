@@ -1,6 +1,6 @@
 version: '3'
 services:
-  umami:
+  app:
     image: ghcr.io/mikecao/umami:postgresql-latest
     restart: always
     environment:
