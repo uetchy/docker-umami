@@ -12,6 +12,9 @@ services:
       LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
     depends_on:
       - db
+    networks:
+      - default
+      - webproxy
 
   db:
     image: postgres:12-alpine
@@ -25,6 +28,6 @@ services:
       - ${UMAMI_DB_DIR}:/var/lib/postgresql/data
 
 networks:
-  default:
-    external:
-      name: ${NETWORK:-webproxy}
+  webproxy:
+    name: ${NETWORK:-webproxy}
+    external: true
